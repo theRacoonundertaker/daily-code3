@@ -1,0 +1,41 @@
+#include<iostream>
+using namespace std;
+int main() {
+
+	char input1;
+	char input2;
+	char input3;
+	char input4;
+
+	cout << "Do you like nuts (y)es or (n)o ?" << endl;
+	cin >> input1;
+	cout << "Do you like ice cream y(e)s or n(o) ?" << endl;
+	cin >> input2;
+	cout << "Do you like (d)ogs or (c)ats Big or Small ?" << endl;
+	cin >> input3;
+
+	if (input1 == 'y') {
+		if (input2 == 'e')
+			cout << "you get rocky road ice cream!" << endl;
+		else if (input2 == 'o')
+			cout << "Here's a snickers bar than." << endl;
+
+	}
+	if (input3 == 'd') {
+		if (input1 == 'y') {
+			cout << "B: (R)ottweiler" << endl;
+			cout << "S: (A)merican curl" << endl;
+			cin >> input4;
+			if (input4 == 'R') {
+				cout << "Here is your beauiful Rottweiler." << endl;
+			}
+			else if (input4 == 'A') {
+				cout << "Here's your fluffy cloud of curl" << endl;
+			}
+		}
+
+	}
+	else
+		cout << "Sorry, that's not an answer I understand." << endl;
+
+}
